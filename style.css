@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: sans-serif;
+    width: 100%;
+}
+.profile {
+    width: 40%;
+    float: right;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-bottom: 5px solid rgb(100, 100, 100);
+}
+.about{
+    margin-left: 15px;
+}
+.profile-info {
+    width: 60%;
+    height: 100vh;
+    float: left;
+    padding: 0 30px;
+    overflow-y: auto; /* Allows vertical scrolling */
+    overflow-x: hidden; /* Hides horizontal scrolling */
+}
+
+.profile-info h1{
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align: center;
+
+}
+
+.social{
+    margin-top: 20px;
+    margin-left:15px;
+}
+.social img{
+    width: 25px;
+    margin-right: 15px;
+    transition: 2s;
+    cursor: pointer;
+}
+.social img:hover{
+    transform: rotate(360deg);
+}
+.profile-info h2{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.expertise img{
+    width: 60%;
+    margin:5px;
+}
+.expertise{
+    display: inline-block;
+    width: 45%;
+    padding: 30px 10px;
+    margin: 2%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(37, 73, 214, 0.18);
+}
+.expertise small{
+    padding-top: 15px;
+    display: block;
+}
+.skills img{
+    width: 80px;
+    margin-right: 15px;
+    transition: 2s;
+    cursor: pointer;
+}
+.course {
+    margin-bottom: 20px;
+}
+ 
+.course-details {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    text-align: center;
+
+}
+/* General styling for the projects section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects a {
+    text-decoration: none;
+    color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects a:hover {
+    background-color: #eaf4fc;
+    border-color: #2196F3;
+}
+
+.projects p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.input-group input{
+    width: 45%;
+    border:0;
+    outline: none !important;
+    padding: 10px;
+    display: inline-block;
+    margin:2%;
+    background-color: rgb(240, 238, 238);
+}
+.text-area textarea{
+    width: 95%;
+    border:0;
+    outline: none !important;
+    padding: 10px;
+    margin:2%;
+    background-color: rgb(240, 238, 238);
+}
+
+.sub{
+    border:0;
+    outline: none !important;
+    padding: 10px 20px;
+    margin:2%;
+    background-color: rgb(55, 162, 189);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+.cont img{
+    width: 20px;
+    margin:-5px 10px;
+}
+.cont span{
+    margin:3%;
+}
+.cont{
+    margin:5% 0 5% 25%;
+    width: 65%;
+}
+
+@media only screen and (max-width:900px){
+    .profile-info{
+        width: 95%;
+        
+    }
+    .profile{
+        width: 95%;
+    }
+    .profile img{
+        width:90%;
+    }
+    .expertise{
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .projects{
+        width: 95%;
+    } 
+    .projects img{
+        width: 30%;
+    }
+    .cont img{
+        width: 10px;
+        margin:-5px 10px;
+    }
+    .cont span{
+        margin:3%;
+        font-size: 10px;
+    }
+    .copy{
+        text-align: center;
+        margin-bottom: 30px;
+        color:gray;
+    }
+}
+@media (min-width: 950px) and (max-width: 1150px) {
+    .profile-info {
+        width: 60%;
+    }
+    .profile {
+        width: 40%;
+    }
+    .expertise {
+        width: 45%;
+    }
+    .projects {
+        width: auto;
+    }
+}
